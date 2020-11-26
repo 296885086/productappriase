@@ -63,7 +63,7 @@ public class CommonController {
         String password = (String) map.get("password");
         int remember = (int) map.get("remember");
         if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password)){
-            msg = "用户名或密码不能为空";
+            msg = "用户名或密码不能为空！";
         }else {
             String loginCode = (String) map.get("code");
             if (!StringUtils.isEmpty(loginCode)){
