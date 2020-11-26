@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+
+<head>
+  <title>注册表单</title>
+
+  <!-- Meta-Tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="application/x-javascript">
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!-- //Meta-Tags -->
+
+  <!-- Style -->
+  <link rel="stylesheet" href="/css/common.css" type="text/css" media="all">
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+
+<body>
+  <h1>XBiaoShop</h1>
+  <div class="container w3layouts agileits pr" id="register">
+    <a href="/common/login" class="back"></a>
+    <div class="register w3layouts agileits">
+      <h2>欢 迎 注 册</h2>
+      <form action="#" method="post">
+        <input type="text" Name="Name" v-model="user.username" placeholder="用户名" required="">
+        <input type="email" Name="Email" v-model="user.email" placeholder="邮箱" required="">
+        <input type="password" Name="Password" v-model="user.password" placeholder="密码" required="">
+        <input type="password" Name="Password" v-model="twoPwd" placeholder="确认密码" required="">
+      </form>
+      <div class="send-button w3layouts agileits">
+        <input type="submit" value="免费注册" @click="doSave()">
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="footer w3layouts agileits">
+    <p>Copyright &copy; 2020.XB All rights reserved.</p>
+  </div>
+</body>
+<!-- //Body -->
+<script src="/js/vue-2.6.11.js"></script>
+<script src="/js/axios-0.19.2.min.js"></script>
+<script src="/js/common/register.js"></script>
+</html>
