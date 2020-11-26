@@ -1,13 +1,13 @@
-package com.sise.productappriase;
+package com.sise.bishe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProductappriaseApplication {
+public class ProductAppriaseApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProductappriaseApplication.class, args);
+		SpringApplication.run(ProductAppriaseApplication.class, args);
 	}
 
 }

@@ -1,0 +1,31 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE mapper-->
+        <!--PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"-->
+        <!--"http://mybatis.org/dtd/mybatis-3-mapper.dtd">-->
+
+<!--<mapper namespace="WorkScoreMapper">
+    <select id="findStudentScore" resultType="Score">
+        select s.*,h.filepath,stu.stuname,h.workname from score s
+        left join homework h on s.workid = h.workid
+        left join student stu on stu.stuid = s.stuid
+        left join selectcourse sc on sc.selectcourseid = s.selectcourseid
+        <if test=" workName == 'all'">
+            where sc.teaid=#{teaid} and sc.coursename=#{course} and sc.courseclass=#{courseClass} and s.state=#{state}
+        </if>
+        <if test="workName != 'all'">
+            where sc.teaid=#{teaid} and sc.coursename=#{course} and sc.courseclass=#{courseClass} and s.state=#{state} and h.workname=#{workName}
+        </if>
+    </select>
+    <select id="findAllScore" resultType="Score">
+        select s.*,stu.stuname,h.filepath,h.workname from score s
+        left join selectcourse sc on sc.selectcourseid = s.selectcourseid
+        left join student stu on stu.stuid = sc.stuid left join homework h on h.workid=s.workid
+        where sc.teaid=#{teaid};
+    </select>
+    <select id="findWorkname" resultType="Homework">
+        select workname,course,uploadclass from homework where teaid=#{teaid};
+    </select>
+    <update id="modifyScore">
+        update score set score=#{score} where workid=#{workid} and stuid=#{stuid}
+    </update>
+</mapper>-->
