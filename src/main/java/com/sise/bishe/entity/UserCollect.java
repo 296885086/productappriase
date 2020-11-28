@@ -3,6 +3,9 @@ package com.sise.bishe.entity;
 import javax.persistence.Column;
 import javax.persistence.Table;
 
+/**
+ * 用户收藏
+ */
 @Table(name = "user_collect")
 public class UserCollect {
     @Column(name = "user_id")

@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 地址
+ */
 @Table(name = "address")
 public class Address {
     @Id

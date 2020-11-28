@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 图片路径
+ */
 @Table(name = "pic")
 public class Pic {
     @Id

@@ -5,6 +5,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
+/**
+ * 订单信息
+ */
 @Table(name = "order")
 public class Order {
     @Id

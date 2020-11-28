@@ -3,6 +3,9 @@ package com.sise.bishe.entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 管理员信息
+ */
 @Table(name = "admin")
 public class Admin {
     @Id

@@ -5,6 +5,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
+/**
+ * 评价内容
+ */
 @Table(name = "evaluation")
 public class Evaluation {
     @Id

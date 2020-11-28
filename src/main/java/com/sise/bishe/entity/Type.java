@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * 商品类型
+ */
 @Table(name = "type")
 public class Type {
     @Id

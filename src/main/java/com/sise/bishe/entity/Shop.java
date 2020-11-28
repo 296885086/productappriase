@@ -5,6 +5,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
+/**
+ * 商家账号
+ */
 @Table(name = "shop")
 public class Shop {
     @Id
