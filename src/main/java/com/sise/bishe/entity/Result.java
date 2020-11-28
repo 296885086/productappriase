@@ -48,6 +48,11 @@ public class Result implements Serializable {
         this.obj = obj;
     }
 
+    public Result(boolean success, String msg) {
+        this.success = success;
+        this.msg = msg;
+    }
+
     public Result(String msg, Object obj) {
         this.msg = msg;
         this.obj = obj;
